@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E7EF166B1E6890340065017F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7EF166A1E6890340065017F /* MapKit.framework */; };
+		E7EF166D1E6905160065017F /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7EF166C1E6905160065017F /* MapViewController.swift */; };
 		E7FE68251E67BF1200AC9ABA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FE68241E67BF1200AC9ABA /* AppDelegate.swift */; };
 		E7FE682A1E67BF1200AC9ABA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7FE68281E67BF1200AC9ABA /* Main.storyboard */; };
 		E7FE682C1E67BF1200AC9ABA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7FE682B1E67BF1200AC9ABA /* Assets.xcassets */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E7EF166A1E6890340065017F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		E7EF166C1E6905160065017F /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		E7FE68211E67BF1200AC9ABA /* WorldTrotter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorldTrotter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7FE68241E67BF1200AC9ABA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E7FE68291E67BF1200AC9ABA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7EF166B1E6890340065017F /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +79,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E7EF16691E6890340065017F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E7EF166A1E6890340065017F /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E7FE68181E67BF1100AC9ABA = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +94,7 @@
 				E7FE68381E67BF1200AC9ABA /* WorldTrotterTests */,
 				E7FE68431E67BF1200AC9ABA /* WorldTrotterUITests */,
 				E7FE68221E67BF1200AC9ABA /* Products */,
+				E7EF16691E6890340065017F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +114,7 @@
 				E7FE68521E67C68D00AC9ABA /* ConversionViewController.swift */,
 				E7FE68241E67BF1200AC9ABA /* AppDelegate.swift */,
 				E7FE68281E67BF1200AC9ABA /* Main.storyboard */,
+				E7EF166C1E6905160065017F /* MapViewController.swift */,
 				E7FE682B1E67BF1200AC9ABA /* Assets.xcassets */,
 				E7FE682D1E67BF1200AC9ABA /* LaunchScreen.storyboard */,
 				E7FE68301E67BF1200AC9ABA /* Info.plist */,
@@ -263,6 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7FE68531E67C68D00AC9ABA /* ConversionViewController.swift in Sources */,
+				E7EF166D1E6905160065017F /* MapViewController.swift in Sources */,
 				E7FE68251E67BF1200AC9ABA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -512,6 +528,7 @@
 				E7FE684B1E67BF1200AC9ABA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E7FE684C1E67BF1200AC9ABA /* Build configuration list for PBXNativeTarget "WorldTrotterTests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +537,7 @@
 				E7FE684E1E67BF1200AC9ABA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E7FE684F1E67BF1200AC9ABA /* Build configuration list for PBXNativeTarget "WorldTrotterUITests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +546,7 @@
 				E7FE68511E67BF1200AC9ABA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

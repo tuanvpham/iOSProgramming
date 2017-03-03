@@ -10,7 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet var questionLabel: UILabel!
+    @IBOutlet var currentQuestionLabel: UILabel!
+    @IBOutlet var nextQuestionLabel: UILabel!
     @IBOutlet var answerLabel: UILabel!
     
     let questions: [String] = ["From what is cognac made?",
@@ -29,8 +30,10 @@ class ViewController: UIViewController {
         }
         
         let question: String = questions[currentQuestionIndex]
-        questionLabel.text = question
+        nextQuestionLabel.text = question
         answerLabel.text = "???"
+        
+        animateLabelTransitions()
     }
     
     @IBAction func showAnswer(sender: AnyObject) {
@@ -40,9 +43,25 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        questionLabel.text = questions[currentQuestionIndex]
+        currentQuestionLabel.text = questions[currentQuestionIndex]
     }
     
+    //Animate the question label when user clicks on next question button
+    func animateLabelTransitions() {
+        //Animate the alpha
+        UIView.animate(withDuration: 0.5, animations: {
+            self.currentQuestionLabel.alpha = 0
+            self.nextQuestionLabel.alpha = 1
+        })
+    }
+    
+    //question label will not appear on screen when the app first loads
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        //Set the label's initial alpha
+        nextQuestionLabel.alpha = 0
+    }
 
 }
 

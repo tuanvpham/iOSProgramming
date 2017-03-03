@@ -55,6 +55,7 @@ class ConversionViewController: UIViewController, UITextFieldDelegate {
     //Celsius Label will be updated when the app launched instead of value of "100"
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("ConversionViewController loaded its view")
         updateCelsiusLabel()
     }
     
