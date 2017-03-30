@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E7237DF41E84AA30008A9354 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7237DF31E84AA30008A9354 /* ItemCell.swift */; };
 		E77D5B5A1E7486CC002384BB /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77D5B591E7486CC002384BB /* ItemsViewController.swift */; };
 		E77D5B5C1E74871E002384BB /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77D5B5B1E74871E002384BB /* Item.swift */; };
 		E77D5B5E1E748B90002384BB /* ItemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77D5B5D1E748B90002384BB /* ItemStore.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E7237DF31E84AA30008A9354 /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 		E77D5B591E7486CC002384BB /* ItemsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsViewController.swift; sourceTree = "<group>"; };
 		E77D5B5B1E74871E002384BB /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		E77D5B5D1E748B90002384BB /* ItemStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemStore.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				E77D5B591E7486CC002384BB /* ItemsViewController.swift */,
+				E7237DF31E84AA30008A9354 /* ItemCell.swift */,
 				E77D5B5B1E74871E002384BB /* Item.swift */,
 				E77D5B5D1E748B90002384BB /* ItemStore.swift */,
 				E79BE2DA1E6E721C00951D97 /* AppDelegate.swift */,
@@ -272,6 +275,7 @@
 				E77D5B5C1E74871E002384BB /* Item.swift in Sources */,
 				E77D5B5E1E748B90002384BB /* ItemStore.swift in Sources */,
 				E77D5B5A1E7486CC002384BB /* ItemsViewController.swift in Sources */,
+				E7237DF41E84AA30008A9354 /* ItemCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
